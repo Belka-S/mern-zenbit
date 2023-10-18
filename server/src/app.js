@@ -16,6 +16,10 @@ app.use(express.urlencoded({ extended: false }));
 // Serve static files
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Setup view engine
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
 // Routes handling
 // app.use('/api', router);
 
