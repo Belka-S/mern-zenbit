@@ -1,29 +1,27 @@
 {
   "files": {
     "main.css": "/mern-zenbit-test/static/css/main.7f4f3f66.css",
-    "main.js": "/mern-zenbit-test/static/js/main.91fa493d.js",
-    "static/js/530.a96665db.chunk.js": "/mern-zenbit-test/static/js/530.a96665db.chunk.js",
-    "static/js/876.5ccd5b7f.chunk.js": "/mern-zenbit-test/static/js/876.5ccd5b7f.chunk.js",
-    "static/js/86.6a0598eb.chunk.js": "/mern-zenbit-test/static/js/86.6a0598eb.chunk.js",
-    "static/js/718.aabbef02.chunk.js": "/mern-zenbit-test/static/js/718.aabbef02.chunk.js",
+    "main.js": "/mern-zenbit-test/static/js/main.4d1a4833.js",
+    "static/js/997.6fcaae50.chunk.js": "/mern-zenbit-test/static/js/997.6fcaae50.chunk.js",
+    "static/js/654.d60841c7.chunk.js": "/mern-zenbit-test/static/js/654.d60841c7.chunk.js",
+    "static/js/297.8a527e0c.chunk.js": "/mern-zenbit-test/static/js/297.8a527e0c.chunk.js",
+    "static/js/201.d8677fd2.chunk.js": "/mern-zenbit-test/static/js/201.d8677fd2.chunk.js",
     "static/js/496.ce6df3f8.chunk.js": "/mern-zenbit-test/static/js/496.ce6df3f8.chunk.js",
     "static/js/452.cabde26e.chunk.js": "/mern-zenbit-test/static/js/452.cabde26e.chunk.js",
-    "static/js/410.c45d32e8.chunk.js": "/mern-zenbit-test/static/js/410.c45d32e8.chunk.js",
     "static/media/mainBackground.jpg": "/mern-zenbit-test/static/media/mainBackground.220465c3d091a5611c66.jpg",
     "static/media/authBackground.jpg": "/mern-zenbit-test/static/media/authBackground.00ebae5a54db6d60c48a.jpg",
     "index.html": "/mern-zenbit-test/index.html",
     "main.7f4f3f66.css.map": "/mern-zenbit-test/static/css/main.7f4f3f66.css.map",
-    "main.91fa493d.js.map": "/mern-zenbit-test/static/js/main.91fa493d.js.map",
-    "530.a96665db.chunk.js.map": "/mern-zenbit-test/static/js/530.a96665db.chunk.js.map",
-    "876.5ccd5b7f.chunk.js.map": "/mern-zenbit-test/static/js/876.5ccd5b7f.chunk.js.map",
-    "86.6a0598eb.chunk.js.map": "/mern-zenbit-test/static/js/86.6a0598eb.chunk.js.map",
-    "718.aabbef02.chunk.js.map": "/mern-zenbit-test/static/js/718.aabbef02.chunk.js.map",
+    "main.4d1a4833.js.map": "/mern-zenbit-test/static/js/main.4d1a4833.js.map",
+    "997.6fcaae50.chunk.js.map": "/mern-zenbit-test/static/js/997.6fcaae50.chunk.js.map",
+    "654.d60841c7.chunk.js.map": "/mern-zenbit-test/static/js/654.d60841c7.chunk.js.map",
+    "297.8a527e0c.chunk.js.map": "/mern-zenbit-test/static/js/297.8a527e0c.chunk.js.map",
+    "201.d8677fd2.chunk.js.map": "/mern-zenbit-test/static/js/201.d8677fd2.chunk.js.map",
     "496.ce6df3f8.chunk.js.map": "/mern-zenbit-test/static/js/496.ce6df3f8.chunk.js.map",
-    "452.cabde26e.chunk.js.map": "/mern-zenbit-test/static/js/452.cabde26e.chunk.js.map",
-    "410.c45d32e8.chunk.js.map": "/mern-zenbit-test/static/js/410.c45d32e8.chunk.js.map"
+    "452.cabde26e.chunk.js.map": "/mern-zenbit-test/static/js/452.cabde26e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7f4f3f66.css",
-    "static/js/main.91fa493d.js"
+    "static/js/main.4d1a4833.js"
   ]
 }
