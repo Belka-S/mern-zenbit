@@ -35,8 +35,8 @@ export const App = () => {
     <>
       {!isRefreshing && (
         <Routes>
-          <Route element={<PublicRoutes />}>
-            <Route path="/" element={<SharedLayuot />}>
+          <Route path="/" element={<SharedLayuot />}>
+            <Route element={<PublicRoutes />}>
               <Route index element={<HomePage />} />
               <Route path="/signup" element={<SignupPage />} />
               <Route path="/signin" element={<SigninPage />} />
@@ -44,11 +44,11 @@ export const App = () => {
               <Route path="/reset" element={<ResetPage />} />
             </Route>
             <Route path="/demo" element={<ItemsPage />} />
-          </Route>
-          <Route element={<PrivateRoutes />}>
-            <Route path="/items" element={<ItemsPage />} />
-          </Route>
 
+            <Route element={<PrivateRoutes />}>
+              <Route path="/items" element={<ItemsPage />} />
+            </Route>
+          </Route>
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       )}

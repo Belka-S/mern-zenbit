@@ -19,9 +19,9 @@ export const selectUserBirthday = state => state.auth.user.birthday;
 export const selectUserAbout = state => state.auth.user.about;
 export const selectUserCreatedAt = state => state.auth.user.createdAt;
 
-// Contacts
-export const selectContacts = state => state.contacts.items;
-export const selectError = state => state.contacts.error;
-export const selectIsLoading = state => state.contacts.isLoading;
-export const selectActiveContact = state => state.contacts.activeItem;
-export const selectFilterValue = state => state.contacts.filter;
+// Items
+export const selectItems = state => state.items.data;
+export const selectError = state => state.items.error;
+export const selectIsLoading = state => state.items.isLoading;
+export const selectActiveContact = state => state.items.activeItem;
+export const selectFilterValue = state => state.items.filter;

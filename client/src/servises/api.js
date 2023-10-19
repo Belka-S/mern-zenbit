@@ -40,23 +40,23 @@ export const resetPass = async credentials => {
   return data;
 };
 
-// Contacts
-export const fetchContacts = async () => {
-  const { data } = await apiClient.get('/contacts');
+// Items
+export const fetchItems = async () => {
+  const { data } = await apiClient.get('/items');
   return data;
 };
 
-export const addContact = async contact => {
-  const { data } = await apiClient.post('/contacts', contact);
+export const addItem = async item => {
+  const { data } = await apiClient.post('/items', item);
   return data;
 };
 
-export const updateContact = async ({ id, contact }) => {
-  const { data } = await apiClient.put(`/contacts/${id}`, contact);
+export const updateItem = async ({ id, item }) => {
+  const { data } = await apiClient.put(`/items/${id}`, item);
   return data;
 };
 
-export const deleteContact = async id => {
-  const { data } = await apiClient.delete(`/contacts/${id}`);
+export const deleteItem = async id => {
+  const { data } = await apiClient.delete(`/items/${id}`);
   return data;
 };

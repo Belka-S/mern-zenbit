@@ -58,6 +58,14 @@ export const IconLink = styled.a`
     border-color: ${themes.colors.hovered};
   }
 
+  & div {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   & pre {
     font-size: 12px;
   }

@@ -4,8 +4,8 @@ import { useDispatch } from 'react-redux';
 
 import { StyledHeader } from './Header.styled';
 import { logoutThunk } from 'store/auth/authOperations';
-import { cleanContacts, setActiveContact } from 'store/contacts/contactsSlice';
-import { setFilterValue } from 'store/contacts/contactsSlice';
+import { cleanItems } from 'store/items/itemsSlice';
+import { setFilterValue } from 'store/items/itemsSlice';
 import { useAuth } from 'utils/hooks/useAuth';
 // import { loginThunk } from 'store/auth/authOperations';
 import OvalLoader from 'components/shared/Loader/OvalLoader';
@@ -18,7 +18,7 @@ const Header = () => {
 
   const { isLoggedIn } = useAuth();
 
-  const isButtons = location.pathname === '/';
+  const isButtons = location.pathname === '/' || location.pathname === '/demo';
 
   const handleLogin = () => {
     navigate('/signin', { replace: true });
@@ -30,8 +30,7 @@ const Header = () => {
 
   const handleLogOut = () => {
     dispatch(logoutThunk());
-    dispatch(cleanContacts());
-    dispatch(setActiveContact(null));
+    dispatch(cleanItems());
     dispatch(setFilterValue(''));
   };
 

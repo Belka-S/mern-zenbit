@@ -1,4 +1,4 @@
 const { User } = require('./user');
-const { Contact } = require('./item');
+const { Item } = require('./item');
 
-module.exports = { User, Contact };
+module.exports = { User, Item };

@@ -9,10 +9,11 @@ const itemSchema = new Schema(
     name: { type: String, required },
     price: { type: String, required },
     ticket: { type: String, required },
-    yield: { type: String, required },
+    percent: { type: String, required },
     days: { type: String, required },
     sold: { type: String, required },
-    owner: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    imageUrl: { type: String, required },
+    // owner: { type: Schema.Types.ObjectId, ref: 'User', required: true },
   },
   { versionKey: false, timestamps: true },
 );

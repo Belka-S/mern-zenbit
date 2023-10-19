@@ -4,7 +4,7 @@ import { persistStore, persistReducer } from 'redux-persist';
 import { FLUSH, REHYDRATE, PAUSE } from 'redux-persist';
 import { PERSIST, PURGE, REGISTER } from 'redux-persist';
 
-import { contactsReducer } from './contacts/contactsSlice';
+import { itemsReducer } from './items/itemsSlice';
 import { authReducer } from './auth/authSlice';
 
 // ----------------persistReducer---------------- //
@@ -15,15 +15,15 @@ const authPersistConfig = {
   whitelist: ['user'],
 };
 
-const contactsPersistConfig = {
-  key: 'contacts',
+const itemsPersistConfig = {
+  key: 'items',
   storage,
-  whitelist: ['filter', 'activeItem'],
+  whitelist: ['filter'],
 };
 
 const rootReducer = combineReducers({
   auth: persistReducer(authPersistConfig, authReducer),
-  contacts: persistReducer(contactsPersistConfig, contactsReducer),
+  items: persistReducer(itemsPersistConfig, itemsReducer),
 });
 
 // ----------------configureStore---------------- //

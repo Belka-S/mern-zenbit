@@ -11,7 +11,7 @@ const Toast = () => (
     toastOptions={{
       // Define default options
       className: '',
-      duration: 2000,
+      duration: 3000,
       style: {
         background: `${themes.colors.white}`,
         color: `${themes.colors.error}`,
