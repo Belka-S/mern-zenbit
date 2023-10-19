@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/mern-zenbit-test/static/css/main.7f4f3f66.css",
-    "main.js": "/mern-zenbit-test/static/js/main.f25cc2ba.js",
-    "static/js/997.6fcaae50.chunk.js": "/mern-zenbit-test/static/js/997.6fcaae50.chunk.js",
-    "static/js/654.d60841c7.chunk.js": "/mern-zenbit-test/static/js/654.d60841c7.chunk.js",
-    "static/js/297.8a527e0c.chunk.js": "/mern-zenbit-test/static/js/297.8a527e0c.chunk.js",
+    "main.js": "/mern-zenbit-test/static/js/main.3895a886.js",
+    "static/js/997.fb627220.chunk.js": "/mern-zenbit-test/static/js/997.fb627220.chunk.js",
+    "static/js/654.b2622ac0.chunk.js": "/mern-zenbit-test/static/js/654.b2622ac0.chunk.js",
+    "static/js/297.ae2056ab.chunk.js": "/mern-zenbit-test/static/js/297.ae2056ab.chunk.js",
     "static/js/201.0efd54e6.chunk.js": "/mern-zenbit-test/static/js/201.0efd54e6.chunk.js",
     "static/js/496.ce6df3f8.chunk.js": "/mern-zenbit-test/static/js/496.ce6df3f8.chunk.js",
     "static/js/452.cabde26e.chunk.js": "/mern-zenbit-test/static/js/452.cabde26e.chunk.js",
@@ -12,16 +12,16 @@
     "static/media/authBackground.jpg": "/mern-zenbit-test/static/media/authBackground.00ebae5a54db6d60c48a.jpg",
     "index.html": "/mern-zenbit-test/index.html",
     "main.7f4f3f66.css.map": "/mern-zenbit-test/static/css/main.7f4f3f66.css.map",
-    "main.f25cc2ba.js.map": "/mern-zenbit-test/static/js/main.f25cc2ba.js.map",
-    "997.6fcaae50.chunk.js.map": "/mern-zenbit-test/static/js/997.6fcaae50.chunk.js.map",
-    "654.d60841c7.chunk.js.map": "/mern-zenbit-test/static/js/654.d60841c7.chunk.js.map",
-    "297.8a527e0c.chunk.js.map": "/mern-zenbit-test/static/js/297.8a527e0c.chunk.js.map",
+    "main.3895a886.js.map": "/mern-zenbit-test/static/js/main.3895a886.js.map",
+    "997.fb627220.chunk.js.map": "/mern-zenbit-test/static/js/997.fb627220.chunk.js.map",
+    "654.b2622ac0.chunk.js.map": "/mern-zenbit-test/static/js/654.b2622ac0.chunk.js.map",
+    "297.ae2056ab.chunk.js.map": "/mern-zenbit-test/static/js/297.ae2056ab.chunk.js.map",
     "201.0efd54e6.chunk.js.map": "/mern-zenbit-test/static/js/201.0efd54e6.chunk.js.map",
     "496.ce6df3f8.chunk.js.map": "/mern-zenbit-test/static/js/496.ce6df3f8.chunk.js.map",
     "452.cabde26e.chunk.js.map": "/mern-zenbit-test/static/js/452.cabde26e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7f4f3f66.css",
-    "static/js/main.f25cc2ba.js"
+    "static/js/main.3895a886.js"
   ]
 }
