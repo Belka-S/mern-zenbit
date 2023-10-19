@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkmern_zenbit_test=self.webpackChunkmern_zenbit_test||[]).push([[718],{2718:function(e,t,n){n.r(t);var s=n(5183),u=n(3329);t.default=function(){return(0,u.jsx)(s.Z,{p:"100px",t1:"ItemsPage"})}}}]);
-//# sourceMappingURL=718.2374de73.chunk.js.map
