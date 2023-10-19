@@ -1,5 +1,4 @@
 const nm = require('nodemailer');
-const sg = require('@sendgrid/mail');
 
 const { HttpError } = require('./HttpError');
 
@@ -20,4 +19,4 @@ const nodemailer = async msg => {
   }
 };
 
-module.exports = { sendgrid, nodemailer };
+module.exports = { nodemailer };

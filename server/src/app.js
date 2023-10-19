@@ -3,7 +3,7 @@ const cors = require('cors');
 const path = require('path');
 require('dotenv').config();
 
-// const router = require('./routes');
+const router = require('./routes');
 
 const app = express();
 
@@ -21,7 +21,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // Routes handling
-// app.use('/api', router);
+app.use('/api', router);
 
 // Missing route error 404: 'Not Found',
 app.use((req, res) => {

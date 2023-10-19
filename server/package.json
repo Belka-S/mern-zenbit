@@ -13,11 +13,19 @@
   "lint:fix": "eslint --fix **/*.js"
  },
  "dependencies": {
+  "bcryptjs": "^2.4.3",
   "cors": "^2.8.5",
   "cross-env": "^7.0.3",
   "dotenv": "^16.3.1",
+  "ejs": "^3.1.9",
   "express": "^4.18.2",
-  "mongoose": "^7.6.3"
+  "html-to-text": "^9.0.5",
+  "joi": "^17.11.0",
+  "jsonwebtoken": "^9.0.2",
+  "mongoose": "^7.6.3",
+  "nodemailer": "^6.9.6",
+  "passport": "^0.6.0",
+  "passport-google-oauth2": "^0.2.0"
  },
  "devDependencies": {
   "eslint": "^8.51.0",
