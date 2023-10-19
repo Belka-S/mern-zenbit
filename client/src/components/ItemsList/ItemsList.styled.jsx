@@ -16,6 +16,9 @@ export const CardWrap = styled.div`
   flex-direction: column;
   justify-content: flex-end;
 
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: ${themes.radius.s};
+
   background-size: cover;
   background-position: center;
   color: ${themes.colors.white};

@@ -19,7 +19,7 @@ body {
   font-family: 'Merriweather', serif;
   line-height: 1.375;
   color:#000;
-  background-color: #E5E5E5;
+  background-color: #F2F2F2;
 }
 
 // -------------------- Reset -------------------- //
