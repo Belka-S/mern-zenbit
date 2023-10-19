@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { Outlet, useNavigate } from 'react-router-dom';
+import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
 import { StyledHeader } from './Header.styled';
@@ -14,7 +14,11 @@ import Button from 'components/shared/Button/Button';
 const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const location = useLocation();
+
   const { isLoggedIn } = useAuth();
+
+  const isButtons = location.pathname === '/';
 
   const handleLogin = () => {
     navigate('/signin', { replace: true });
@@ -34,12 +38,13 @@ const Header = () => {
   return (
     <>
       <StyledHeader>
-        {isLoggedIn ? (
-          <Button onClick={handleLogOut}>Log out</Button>
-        ) : (
+        {isLoggedIn && <Button onClick={handleLogOut}>Log out</Button>}
+        {isButtons && (
           <>
             <Button onClick={handleLogin}>Log in</Button>
-            <Button onClick={handleSignup}>Sign up</Button>
+            <Button className="signup" onClick={handleSignup}>
+              Sign up
+            </Button>
           </>
         )}
       </StyledHeader>

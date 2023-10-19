@@ -43,7 +43,7 @@ const ForgotForm = ({ setIsForgot, email }) => {
 
           <Fragment>
             <Label>
-              Email:
+              Email
               <pre> </pre>
               <ErrorMsg name="email" component="span" />
             </Label>
@@ -52,6 +52,7 @@ const ForgotForm = ({ setIsForgot, email }) => {
               <Field
                 type="email"
                 name="email"
+                placeholder="Email"
                 validation={isValid({ values, errors })}
               />
 

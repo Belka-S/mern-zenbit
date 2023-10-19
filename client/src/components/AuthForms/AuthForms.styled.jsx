@@ -7,26 +7,37 @@ import { BsCheckCircle, BsExclamationCircle } from 'react-icons/bs';
 import { themes } from 'styles/themes';
 
 export const Form = styled(FormikForm)`
-  height: 100vh;
+  margin-top: 80px;
+  height: calc(100vh - 80px);
+  min-width: 550px;
   padding: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  background-color: ${themes.colors.white};
+  background-color: ${themes.colors.background};
+
+  & .toggler {
+    margin-top: 10px;
+    align-self: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.57;
+  }
 `;
 
 export const Label = styled.label`
   display: flex;
   align-items: baseline;
 
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.42;
 
   & pre {
     font-size: 10px;
   }
-  // &::first-letter { text-transform: uppercase; }
 `;
 
 const FieldStyles = css`
@@ -40,22 +51,38 @@ const FieldStyles = css`
 
 export const FieldWrap = styled.div`
   ${FieldStyles}
+
+  margin-bottom: 20px;
   position: relative;
+
+  &:last-of-type {
+    margin-bottom: 10px;
+  }
 `;
 
 export const Field = styled(FormikField)`
   ${FieldStyles}
 
-  padding: 10px 12px;
+  height: 48px;
+  padding: 12px 20px 15px;
   padding-left: ${({ name }) => name.toLowerCase().includes('pass') && '38px'};
 
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.57;
 
   border: 1px solid ${themes.colors.border};
   border-radius: ${themes.radius.s};
   outline: 0.5px solid transparent;
+  background-color: ${themes.colors.border};
+
   transition: border-color 250ms linear, outline-color 250ms linear;
+
+  &::placeholder {
+    color: ${themes.colors.black};
+    opacity: 0.5;
+  }
 
   border-color: ${({ validation }) => {
     switch (validation) {
@@ -91,7 +118,7 @@ export const Field = styled(FormikField)`
 `;
 
 export const Tittle = styled.div`
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -99,8 +126,9 @@ export const Tittle = styled.div`
   & h2 {
     margin: 0;
 
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-family: 'Merriweather', serif;
+    font-size: 28px;
+    line-height: 1.21;
   }
 `;
 

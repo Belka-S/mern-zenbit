@@ -35,18 +35,20 @@ export const App = () => {
     <>
       {!isRefreshing && (
         <Routes>
-          <Route path="/" element={<SharedLayuot />}>
-            <Route element={<PublicRoutes />}>
+          <Route element={<PublicRoutes />}>
+            <Route path="/" element={<SharedLayuot />}>
               <Route index element={<HomePage />} />
               <Route path="/signup" element={<SignupPage />} />
               <Route path="/signin" element={<SigninPage />} />
               <Route path="/google" element={<GooglePage />} />
               <Route path="/reset" element={<ResetPage />} />
             </Route>
-            <Route element={<PrivateRoutes />}>
-              <Route path="/items" element={<ItemsPage />} />
-            </Route>
+            <Route path="/demo" element={<ItemsPage />} />
           </Route>
+          <Route element={<PrivateRoutes />}>
+            <Route path="/items" element={<ItemsPage />} />
+          </Route>
+
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       )}

@@ -4,6 +4,7 @@ import { themes } from 'styles/themes';
 
 export const StyledHeader = styled.header`
   width: 100%;
+  height: 80px;
   position: absolute;
   top: 0;
   left: 0;
@@ -13,6 +14,14 @@ export const StyledHeader = styled.header`
   padding: 18px 80px;
   z-index: 10;
 
-  border-bottom: 1px solid black;
   background-color: ${themes.colors.black};
+
+  & button {
+    &.signup {
+      background-color: transparent;
+      margin-left: 10px;
+      color: ${themes.colors.white};
+      background-color: ${themes.colors.accent};
+    }
+  }
 `;

@@ -16,11 +16,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 0.02em;
-  line-height: 1.3;
-  color:#343434;
-  background-color: #e0e2e8;
+  font-family: 'Merriweather', serif;
+  line-height: 1.375;
+  color:#000;
+  background-color: #E5E5E5;
 }
 
 // -------------------- Reset -------------------- //
@@ -90,7 +89,7 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   /* border: 1px solid #b1b1b1; */
   -webkit-text-fill-color: rgb(0, 0, 0);
-  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+  -webkit-box-shadow: 0 0 0px 1000px #E0E0E0 inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 `;

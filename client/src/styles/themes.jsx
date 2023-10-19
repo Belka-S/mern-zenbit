@@ -1,22 +1,21 @@
 export const themes = Object.freeze({
   colors: {
-    background: '#e0e2e8',
-    accent: '#2374ef',
-    hovered: '#206bdd',
+    background: '#E5E5E5',
+    accent: '#B29F7E',
+    hovered: '#9e8a69',
 
     black: '#172234',
-    white: '#FFFFFF',
+    white: '#FFF',
     ligthBlue: '#ddf0ff83',
 
     error: '#E74A3B',
     success: '#3CBC81',
-    noValue: '#343434',
+    noValue: '#9e8a69',
 
-    border: '#b1b1b1',
+    border: '#E0E0E0',
     placeholder: '#5c5858',
 
-    backdrop: 'rgba(23, 24, 32, 0.5)',
-    backdrop1: 'rgba(103, 103, 103, 0.5)',
+    backdrop: 'rgba(14, 15, 26, 0.5)',
   },
   fontSizes: {
     micro: '10px',

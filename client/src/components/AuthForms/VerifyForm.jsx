@@ -40,7 +40,7 @@ const VerifyForm = () => {
       {({ values, errors }) => (
         <Form>
           <Tittle>
-            <h2>Verify: {userEmail}</h2>
+            <h2>Verify {userEmail}</h2>
           </Tittle>
 
           <Fragment>
@@ -53,6 +53,7 @@ const VerifyForm = () => {
               <Field
                 type="text"
                 name="verificationCode"
+                placeholder="Code"
                 validation={isValid({ values, errors })}
               />
 

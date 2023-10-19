@@ -53,7 +53,7 @@ const ResetForm = ({ id, pwdToken }) => {
             <Fragment key={key}>
               <Label>
                 {key.at(0).toUpperCase() +
-                  key.replace('Pass', ' password:').substring(1)}
+                  key.replace('Pass', ' password').substring(1)}
                 <pre> </pre>
                 <ErrorMsg name={key} component="span" />
               </Label>
@@ -62,6 +62,10 @@ const ResetForm = ({ id, pwdToken }) => {
                 <Field
                   type={toggle}
                   name={key}
+                  placeholder={
+                    key.at(0).toUpperCase() +
+                    key.replace('Pass', ' password').substring(1)
+                  }
                   validation={isValid({ values, errors, key })}
                 />
 

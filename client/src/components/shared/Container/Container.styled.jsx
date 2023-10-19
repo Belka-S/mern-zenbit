@@ -21,7 +21,7 @@ export const Div = styled.div`
   h3 {
     /* margin-bottom: 5px; */
     margin: ${({ mt = '0 0 15px 0' }) => mt};
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Merriweather', serif;
     text-align: ${({ ta }) => ta};
     font-size: 26px;
   }

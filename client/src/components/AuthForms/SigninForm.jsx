@@ -56,27 +56,21 @@ const SigninForm = ({ setIsVerify, setIsForgot, setEmail }) => {
       {({ values, errors }) => (
         <Form>
           <Tittle>
-            <h2>Log in</h2>
-            <LinkRoute to="/signup">Don't have an account?</LinkRoute>
+            <h2>Log In</h2>
           </Tittle>
-
           {Object.keys(initialValues).map(key => (
             <Fragment key={key}>
               <Label>
-                {key.at(0).toUpperCase() + key.substring(1) + ':'}
+                {key.at(0).toUpperCase() + key.substring(1)}
                 <pre> </pre>
                 <ErrorMsg name={key} component="span" />
-                {key === 'password' && (
-                  <LinkBtn onClick={() => onClick(values)}>
-                    Forgot your pass?
-                  </LinkBtn>
-                )}
               </Label>
 
               <FieldWrap>
                 <Field
                   type={key === 'password' ? toggle : key}
                   name={key}
+                  placeholder={key.at(0).toUpperCase() + key.substring(1)}
                   validation={isValid({ values, errors, key })}
                 />
 
@@ -86,12 +80,20 @@ const SigninForm = ({ setIsVerify, setIsForgot, setEmail }) => {
                 {values[key] && errors[key] && <ErrorIcon />}
                 {values[key] && !errors[key] && <SuccessIcon />}
               </FieldWrap>
+
+              {key === 'password' && (
+                <LinkBtn onClick={() => onClick(values)}>
+                  Forgot password?
+                </LinkBtn>
+              )}
             </Fragment>
           ))}
-
           <SignBtn disabled={isDisabled({ values, errors })}>Sign in</SignBtn>
-
           <GoogleBtn />
+
+          <span className="toggler">
+            Don't have an account? <LinkRoute to="/signup">Sign Up</LinkRoute>
+          </span>
         </Form>
       )}
     </Formik>

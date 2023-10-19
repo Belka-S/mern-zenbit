@@ -2,18 +2,16 @@ import styled, { css } from 'styled-components';
 import { themes } from 'styles/themes';
 
 const CommonStyles = css`
-  height: 41px;
+  height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   cursor: pointer;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-
-  @media screen and (width >= 768px) {
-    font-size: 16px;
-  }
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.37;
 
   border: 1px solid;
   border-radius: ${themes.radius.s};
@@ -25,7 +23,6 @@ export const SignButton = styled.button`
 
   margin-top: 30px;
 
-  font-weight: 700;
   border-color: ${themes.colors.accent};
   color: ${themes.colors.white};
   background-color: ${themes.colors.accent};
@@ -50,16 +47,15 @@ export const IconLink = styled.a`
   margin-top: 18px;
   padding-inline: 10px;
 
-  font-weight: 400;
-  border-color: ${themes.colors.border};
+  border-color: ${themes.colors.accent};
   color: ${themes.colors.black};
-  background-color: ${themes.colors.white};
+  background-color: transparent;
+  transition: color 250ms, border-color 250ms;
 
   &:hover,
   &:focus {
     color: ${themes.colors.hovered};
     border-color: ${themes.colors.hovered};
-    background-color: ${themes.colors.ligthBlue};
   }
 
   & pre {

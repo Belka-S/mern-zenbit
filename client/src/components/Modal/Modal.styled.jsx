@@ -16,14 +16,13 @@ export const Backdrop = styled.div`
   backdrop-filter: blur(5px);
 
   & > div {
-    min-width: 400px;
     position: absolute;
     top: 50%;
-    left: 50%;
+    right: 0;
 
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
 
-    background-color: transparent; // ${themes.colors.white};
+    background-color: transparent;
     box-shadow: ${themes.shadows.modal};
   }
 `;

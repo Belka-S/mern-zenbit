@@ -2,36 +2,24 @@ import styled from 'styled-components';
 import { themes } from 'styles/themes';
 
 export const Btn = styled.button`
-  padding: 2px 6px;
+  width: 160px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 12px;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.375;
 
-  @media screen and (width >= 768px) {
-    padding: 4px 10px;
-    font-size: 14px;
-  }
-
-  color: ${themes.colors.black};
-  border: 1px solid ${themes.colors.border};
+  color: ${themes.colors.accent};
+  border: 1px solid ${themes.colors.accent};
   border-radius: ${themes.radius.s};
-  background-color: ${themes.colors.white};
-  transition: border-color 250ms, background-color 250ms, color 250ms;
+  background-color: transparent;
+  transition: transform 250ms;
 
   &:hover {
-    color: ${themes.colors.hovered};
-    border-color: ${themes.colors.hovered};
-    background-color: ${themes.colors.ligthBlue};
-  }
-
-  &:disabled {
-    cursor: auto;
-    color: ${themes.colors.border};
-    border-color: ${themes.colors.border};
-    background-color: ${themes.colors.white};
+    transform: scale(1.02);
   }
 `;

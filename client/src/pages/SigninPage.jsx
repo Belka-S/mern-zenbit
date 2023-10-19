@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Container from 'components/shared/Container/Container';
+import AuthLayout from 'layouts/AuthLayout/AuthLayout';
 import SigninForm from 'components/AuthForms/SigninForm';
 import ForgotForm from 'components/AuthForms/ForgotForm';
 import Modal from 'components/Modal/Modal';
@@ -12,7 +12,7 @@ const SigninPage = () => {
   const [email, setEmail] = useState('');
 
   return (
-    <Container w="550px" p="0" m="0 0 0 auto">
+    <AuthLayout>
       <SigninForm
         setIsVerify={setIsVerify}
         setIsForgot={setIsForgot}
@@ -30,7 +30,7 @@ const SigninPage = () => {
           <ForgotForm setIsForgot={setIsForgot} email={email} />
         </Modal>
       )}
-    </Container>
+    </AuthLayout>
   );
 };
 

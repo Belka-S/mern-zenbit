@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Container from 'components/shared/Container/Container';
+import AuthLayout from 'layouts/AuthLayout/AuthLayout';
 import SignupForm from 'components/AuthForms/SignupForm';
 import Modal from 'components/Modal/Modal';
 import VerifyForm from 'components/AuthForms/VerifyForm';
@@ -9,7 +9,7 @@ const SignupPage = () => {
   const [isVerify, setIsVerify] = useState(false);
 
   return (
-    <Container w="550px" p="0" m="0 0 0 auto">
+    <AuthLayout>
       <SignupForm setIsVerify={setIsVerify} />
 
       {isVerify && (
@@ -17,7 +17,7 @@ const SignupPage = () => {
           <VerifyForm />
         </Modal>
       )}
-    </Container>
+    </AuthLayout>
   );
 };
 

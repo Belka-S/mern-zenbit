@@ -2,9 +2,20 @@ import PropTypes from 'prop-types';
 
 import { Btn } from './Button.styled';
 
-const Button = ({ onClick, type = 'button', disabled, children }) => {
+const Button = ({
+  className,
+  onClick,
+  type = 'button',
+  disabled,
+  children,
+}) => {
   return (
-    <Btn onClick={onClick} type={type} disabled={disabled}>
+    <Btn
+      className={className}
+      onClick={onClick}
+      type={type}
+      disabled={disabled}
+    >
       {children}
     </Btn>
   );
@@ -13,6 +24,7 @@ const Button = ({ onClick, type = 'button', disabled, children }) => {
 export default Button;
 
 Button.propTepes = {
+  className: PropTypes.string,
   onClick: PropTypes.func,
   type: PropTypes.string,
   disabled: PropTypes.bool,

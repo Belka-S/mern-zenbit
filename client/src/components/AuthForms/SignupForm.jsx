@@ -49,14 +49,13 @@ const SignupForm = ({ setIsVerify }) => {
       {({ values, errors }) => (
         <Form>
           <Tittle>
-            <h2>Sign up</h2>
-            <LinkRoute to="/signin">Have an account?</LinkRoute>
+            <h2>Sign Up</h2>
           </Tittle>
 
           {Object.keys(initialValues).map(key => (
             <Fragment key={key}>
               <Label>
-                {key.at(0).toUpperCase() + key.substring(1) + ':'}
+                {key.at(0).toUpperCase() + key.substring(1)}
                 <pre> </pre>
                 <ErrorMsg name={key} component="span" />
               </Label>
@@ -65,6 +64,7 @@ const SignupForm = ({ setIsVerify }) => {
                 <Field
                   type={key === 'password' ? toggle : key}
                   name={key}
+                  placeholder={key.at(0).toUpperCase() + key.substring(1)}
                   validation={isValid({ values, errors, key })}
                 />
 
@@ -80,6 +80,10 @@ const SignupForm = ({ setIsVerify }) => {
           <SignBtn disabled={isDisabled({ values, errors })}>Sign up</SignBtn>
 
           <GoogleBtn />
+
+          <span className="toggler">
+            Have an account? <LinkRoute to="/signin">Log In</LinkRoute>
+          </span>
         </Form>
       )}
     </Formik>

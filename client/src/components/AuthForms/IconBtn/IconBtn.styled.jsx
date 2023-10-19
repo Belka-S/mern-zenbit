@@ -11,11 +11,6 @@ export const Button = styled.button`
 
   border-color: transparent;
   background-color: transparent;
-  color: ${themes.colors.border};
+  color: ${themes.colors.black};
   transition: color 250ms;
-
-  &:hover,
-  &:focus {
-    color: ${themes.colors.black};
-  }
 `;

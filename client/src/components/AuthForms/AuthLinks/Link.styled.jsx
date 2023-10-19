@@ -7,10 +7,16 @@ const CommonStyles = css`
   margin-left: auto;
 
   color: ${themes.colors.accent};
-  text-decoration: underline;
-  font-family: 'Roboto', sans-serif;
-  font-size: ${({ fs = '14px' }) => fs};
-  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.57;
+  transition: color 250ms;
+
+  &:hover,
+  &:focus {
+    color: ${themes.colors.hovered};
+  }
 `;
 
 export const Link = styled(RouteLink)`
