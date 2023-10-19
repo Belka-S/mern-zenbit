@@ -20,6 +20,7 @@ export const MainContainer = styled.div`
     ),
     url(${mainBackground});
   background-size: cover;
+  background-position: center;
 
   & h1 {
     margin-bottom: 10px;

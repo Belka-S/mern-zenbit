@@ -10,5 +10,6 @@ export const AuthContainer = styled.div`
     width: 100%;
     background-image: url(${authBackground});
     background-size: cover;
+    background-position: center;
   }
 `;
